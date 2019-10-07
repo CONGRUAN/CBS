@@ -20,7 +20,8 @@ namespace EClaim.CBS.Common
         {
             var request = (HttpWebRequest)WebRequest.Create(url);
 
-            var data = Encoding.ASCII.GetBytes(param);
+            //var data = Encoding.ASCII.GetBytes(param);
+            var data = Encoding.GetEncoding("gbk").GetBytes(param);
 
             request.Method = "POST";
             SetHeaderValue(request.Headers, "Accept", "*/*");

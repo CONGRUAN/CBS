@@ -40,7 +40,8 @@ namespace EClaim.CBS.Common
         {
             //生成码表
             GetCRC32Table();
-            byte[] buffer = System.Text.ASCIIEncoding.ASCII.GetBytes(str);
+            //byte[] buffer = System.Text.ASCIIEncoding.ASCII.GetBytes(str);
+            byte[] buffer = Encoding.GetEncoding("gbk").GetBytes(str);
             ulong value = 0xffffffff;
             int len = buffer.Length;
             for (int i = 0; i < len; i++)

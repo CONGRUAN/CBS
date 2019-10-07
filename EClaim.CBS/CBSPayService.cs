@@ -213,7 +213,7 @@ namespace EClaim.CBS
         {
             string head = "<?xml version='1.0' encoding='GBK'?><PGK><DATA><![CDATA[";
             StringBuilder sb = new StringBuilder();
-            sb.Append("<?xml version='1.0' encoding='utf-8'?>");
+            sb.Append("<?xml version='1.0' encoding='GBK'?>");
             sb.Append("<CBSERPPGK>");
             sb.Append("<INFO><FUNNAM>ERPAYSAV</FUNNAM></INFO>");
             sb.Append("<APPAYSAVX>");
@@ -256,7 +256,7 @@ namespace EClaim.CBS
         {
             string head = "<?xml version='1.0' encoding='GBK'?><PGK><DATA><![CDATA[";
             StringBuilder sb = new StringBuilder();
-            sb.Append("<?xml version='1.0' encoding='utf-8'?>");
+            sb.Append("<?xml version='1.0' encoding='GBK'?>");
             sb.Append("<CBSERPPGK>");
             sb.Append("<INFO><FUNNAM>ERPAYBUS</FUNNAM></INFO>");
             sb.Append("<ERPAYBUSX>");
@@ -282,7 +282,7 @@ namespace EClaim.CBS
         {
             string head = "<?xml version='1.0' encoding='GBK'?><PGK><DATA><![CDATA[";
             StringBuilder sb = new StringBuilder();
-            sb.Append("<?xml version='1.0' encoding='utf-8'?>");
+            sb.Append("<?xml version='1.0' encoding='GBK'?>");
             sb.Append("<CBSERPPGK>");
             sb.Append("<INFO><FUNNAM>ERPAYSTA</FUNNAM></INFO>");
             if(payInfoList != null)
